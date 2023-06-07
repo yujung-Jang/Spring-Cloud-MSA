@@ -10,7 +10,7 @@ import org.springframework.cloud.context.config.annotation.RefreshScope;
 @Setter
 @ToString
 @RefreshScope
-@ConfigurationProperties("com.yujung.cloud-client")
+@ConfigurationProperties("com.yujung.client")
 public class MyConfig {
 
     private String profile;

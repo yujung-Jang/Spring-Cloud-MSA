@@ -4,14 +4,14 @@ server:
 spring:
   application:
     name: server
-  profiles:
-    active: native
+#  profiles:
+#    active: native
 
   cloud:
     config:
       server:
-        native:
-          search-locations: file:/Users/jang-yujung/Documents/study
+#        native:
+#          search-locations: file:/Users/jang-yujung/Documents/study
         git:
           uri: https://github.com/yujung-Jang/Spring-Cloud-MSA
           search-paths: cloud-config-file/**
