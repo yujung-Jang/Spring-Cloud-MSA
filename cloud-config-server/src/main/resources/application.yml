@@ -1,0 +1,18 @@
+server:
+  port: 8888
+
+spring:
+  application:
+    name: config-server
+  profiles:
+    active: native
+
+  cloud:
+    config:
+      server:
+        native:
+          search-locations: file:/Users/jang-yujung/Documents/study
+        git:
+          uri: https://github.com/yujung-Jang/Spring-Cloud-MSA
+          search-paths: test-cloud-config-file/**
+          default-label: main
