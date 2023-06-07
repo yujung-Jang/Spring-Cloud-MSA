@@ -1,0 +1,18 @@
+server:
+  port: 8181
+
+spring:
+  application:
+    name: config-client
+
+  profiles:
+    active: real
+
+  config:
+    import: optional:configserver:http://localhost:8888
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health, beans, refresh
