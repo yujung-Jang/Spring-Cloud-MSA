@@ -1,0 +1,5 @@
+com:
+  yujung:
+    cloud-client:
+      profile: real
+      region: gg-gy
