@@ -3,7 +3,7 @@ server:
 
 spring:
   application:
-    name: config-server
+    name: server
   profiles:
     active: native
 
@@ -14,5 +14,5 @@ spring:
           search-locations: file:/Users/jang-yujung/Documents/study
         git:
           uri: https://github.com/yujung-Jang/Spring-Cloud-MSA
-          search-paths: test-cloud-config-file/**
+          search-paths: cloud-config-file/**
           default-label: main
