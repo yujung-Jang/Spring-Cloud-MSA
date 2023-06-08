@@ -12,7 +12,9 @@ spring:
     password: guest
 
   profiles:
-    active: hello
+#    active: hello
+    active: real
+#    active: default
 
   config:
     import: optional:configserver:http://localhost:8888
