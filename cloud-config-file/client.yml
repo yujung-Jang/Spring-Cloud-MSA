@@ -1,0 +1,5 @@
+com:
+  yujung:
+    client:
+      profile: default
+      region: hello
