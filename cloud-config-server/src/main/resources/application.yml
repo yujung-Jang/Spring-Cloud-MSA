@@ -11,7 +11,7 @@ spring:
     config:
       server:
 #        native:
-#          search-locations: file:/Users/jang-yujung/Documents/study
+#          search-locations: cloud-config-file/**
         git:
           uri: https://github.com/yujung-Jang/Spring-Cloud-MSA
           search-paths: cloud-config-file/**
