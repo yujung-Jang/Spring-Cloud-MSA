@@ -5,8 +5,14 @@ spring:
   application:
     name: client
 
+  rabbitmq:
+    host: 127.0.0.1
+    port: 5672
+    username: guest
+    password: guest
+
   profiles:
-    active: real
+    active: hello
 
   config:
     import: optional:configserver:http://localhost:8888
@@ -15,4 +21,5 @@ management:
   endpoints:
     web:
       exposure:
-        include: health, beans, refresh
+        include: refresh, health, beans, httptrace, busrefresh, info, metrics, prometheus
+#        include: health, beans, refresh

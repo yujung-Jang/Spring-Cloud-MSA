@@ -4,15 +4,28 @@ server:
 spring:
   application:
     name: server
-#  profiles:
-#    active: native
+
+  rabbitmq:
+    host: 127.0.0.1
+    port: 5672
+    username: guest
+    password: guest
+
+  profiles:
+    active: native
 
   cloud:
     config:
       server:
-#        native:
-#          search-locations: cloud-config-file/**
+        native:
+          search-locations: file:/Users/jang-yujung/Documents/study
         git:
           uri: https://github.com/yujung-Jang/Spring-Cloud-MSA
           search-paths: cloud-config-file/**
           default-label: main
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: refresh, health, beans, httptrace, busrefresh, info, metrics, prometheus
